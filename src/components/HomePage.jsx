@@ -83,7 +83,7 @@ function HomePage() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/sai2001"
+                href="https://www.linkedin.com/in/saishashank768"
                 target="_blank"
                 rel="noreferrer"
                 className="bg-orange-100 hover:bg-orange-200 transition-all rounded-full p-2"
