@@ -156,7 +156,7 @@ const AboutPage = () => {
       <Github className="w-7 h-7" />
     </a>
 
-    <a href='https://www.linkedin.com/in/sai2001' target='_blank' rel="noreferrer"
+    <a href='https://www.linkedin.com/in/saishashank768' target='_blank' rel="noreferrer"
       className="p-3 hover:bg-gray-100 rounded-lg transition-colors">
       <Linkedin className="w-7 h-7" />
     </a>
