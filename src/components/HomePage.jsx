@@ -8,7 +8,7 @@ import HyperText from "@/components/ui/hyper-text";
 import { ShinyButton } from "@/components/ui/shiny-button";
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import { motion } from "framer-motion";
-import myphoto from "../assets/myphoto.png";
+import profile2027 from "../assets/profile-2027.jpg";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 function HomePage() {
@@ -53,7 +53,7 @@ function HomePage() {
               transition={{ duration: 0.5 }}
               className="mt-4 z-50 lg:ml-48 max-w-xl text-center lg:text-left text-gray-700"
             >
-              MSc Data Science · I build ERP systems and web apps (Django, React, Azure, Postgres). Currently open to work as freelancer and full-time roles.
+              I am a professional freelancer specializing in custom software solutions, modern website development, and creative video & reel editing. I help businesses and individuals elevate their digital presence with tailored, high-quality work—delivered with a focus on style, innovation, and results.
             </motion.p>
 
             <div className="flex flex-row gap-3 items-center justify-center lg:justify-start lg:ml-48 mt-6 z-50">
@@ -111,7 +111,7 @@ function HomePage() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            src={myphoto}
+            src={profile2027}
             alt="Sai Shashank"
             className="w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 border-4 border-green-900 rounded-full object-cover shadow-xl"
           />

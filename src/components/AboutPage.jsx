@@ -1,4 +1,5 @@
 import React from 'react';
+import profile2027 from '../assets/profile-2027.jpg';
 import { Github, Linkedin, Mail, ExternalLink, Phone } from 'lucide-react';
 import { Card, CardHeader } from "@/components/ui/card";
 import { motion } from 'framer-motion';
@@ -34,23 +35,33 @@ const AboutPage = () => {
     <div className="min-h-screen bg-orange-50 z-50 p-8 pb-28 md:pb-8 md:pt-32">
       <div className="max-w-4xl mx-auto space-y-12">
         {/* Hero Section */}
-        <div className="space-y-6">
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-4xl md:text-5xl font-bold"
-          >
-            Sai Shashank S
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-lg text-gray-600"
-          >
-            MSc Data Science · Full-Stack Developer · ML & Product — I build data-driven products, ERPs and ML solutions for business impact.
-          </motion.p>
+        <div className="space-y-6 flex flex-col md:flex-row items-center md:items-start gap-8">
+          <motion.img
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            src={profile2027}
+            alt="Profile"
+            className="w-40 h-40 rounded-full object-cover border-4 border-black shadow-lg mb-4 md:mb-0"
+          />
+          <div className="flex-1 space-y-4">
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-4xl md:text-5xl font-bold"
+            >
+              Sai Shashank S
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-lg text-gray-700 font-medium"
+            >
+              I am a professional freelancer specializing in custom software solutions, modern website development, and creative video & reel editing. I help businesses and individuals elevate their digital presence with tailored, high-quality work—delivered with a focus on style, innovation, and results.
+            </motion.p>
+          </div>
         </div>
 
         {/* Main Content */}
