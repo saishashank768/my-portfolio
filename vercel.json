@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/sitemap.xml", "destination": "/api/sitemap" },
+    { "source": "/robots.txt", "destination": "/api/robots" },
+    { "source": "/about", "destination": "/" },
+    { "source": "/projects", "destination": "/" },
+    { "source": "/resume", "destination": "/" },
+    { "source": "/resources", "destination": "/" },
+    { "source": "/marketplace", "destination": "/" },
+    { "source": "/contact", "destination": "/" },
+    { "source": "/services/:path*", "destination": "/" }
+  ]
+}

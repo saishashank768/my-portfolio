@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 
@@ -9,7 +8,7 @@ const ResumePage = () => {
     {
       id: 1,
       title: "Full Stack Developer",
-      company: "CKP Software Technologies, Bengaluru",
+      company: "Professional experience, Bengaluru",
       period: "Nov 2024 – Jul 2025",
       responsibilities: [
         "Developed and deployed ERP solutions for manufacturing, aerospace, and educational clients.",
@@ -17,15 +16,15 @@ const ResumePage = () => {
         "Ensured performance, security, and uptime on client servers.",
       ],
       highlights: [
-        "LG Chennai (Laljee Godhoo & Co) – ERP for hinge manufacturing across two units (inventory, billing, order tracking); full-stack build + IIS hosting; earned Problem Solver Award.",
-        "Macro Precision Components – Designed HR module: onboarding, attendance, and payroll; integrated Django REST APIs with dynamic dashboards.",
-        "Pinnacle School of Commerce & Management – Developed WhatsApp alert system (Msg91/Twilio API) for fee and academic notifications; promoted to Reporting Manager after project delivery.",
+        "Manufacturing ERP for two units — inventory, billing, and order tracking; full-stack delivery and IIS hosting; received a Problem Solver Award.",
+        "Designed an HR module for onboarding, attendance, and payroll; integrated Django REST APIs with dynamic dashboards.",
+        "Developed a WhatsApp notification workflow for university fee and academic updates; took on reporting responsibilities after delivery.",
       ],
     },
   ];
 
   const internship = {
-    company: "Go Get Solutions Pvt Ltd, Bengaluru",
+    company: "Bengaluru, India",
     period: "Apr 2024 – Jul 2024",
     details: [
       "Built clustering-based customer segmentation, sentiment analysis from social/blog data, and sales forecasting for millet products.",
@@ -124,7 +123,7 @@ const ResumePage = () => {
                 <p className="text-gray-700 mt-1">Full-Stack Developer · MSc Data Science</p>
 
                 <div className="text-sm text-gray-600 mt-3 space-y-1">
-                  <div>📞 +91-7483105774</div>
+                  <div>📞 +91-9483508971</div>
                   <div>✉️ <a href="mailto:saishashank.pvs@gmail.com" className="underline">saishashank.pvs@gmail.com</a></div>
                   <div>🔗 <a href="https://www.linkedin.com/in/sai2001" target="_blank" rel="noreferrer" className="underline">LinkedIn</a> · <a href="https://github.com/sai2001" target="_blank" rel="noreferrer" className="underline ml-1">GitHub</a></div>
                 </div>

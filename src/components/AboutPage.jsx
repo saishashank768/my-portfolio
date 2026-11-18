@@ -1,6 +1,5 @@
-import React from 'react';
 import profile2027 from '../assets/profile-2027.jpg';
-import { Github, Linkedin, Mail, ExternalLink, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Phone, MessageCircle } from 'lucide-react';
 import { Card, CardHeader } from "@/components/ui/card";
 import { motion } from 'framer-motion';
 
@@ -177,9 +176,14 @@ const AboutPage = () => {
       <Mail className="w-7 h-7" />
     </a>
 
-    <a href="tel:+917483105774"
+    <a href="tel:+919483508971"
       className="p-3 hover:bg-gray-100 rounded-lg transition-colors">
       <Phone className="w-7 h-7" />
+    </a>
+
+    <a href="https://wa.me/919483508971" target="_blank" rel="noreferrer" aria-label="WhatsApp"
+      className="p-3 hover:bg-gray-100 rounded-lg transition-colors">
+      <MessageCircle className="w-7 h-7" />
     </a>
 
   </div>
@@ -187,7 +191,7 @@ const AboutPage = () => {
 
 
               <div className="mt-4 text-sm text-gray-600">
-                <div>📞 +91-7483105774</div>
+                <div>📞 +91-9483508971</div>
                 <div>✉️ <a href="mailto:saishashank.pvs@gmail.com" className="underline">saishashank.pvs@gmail.com</a></div>
                 <div>📍 Bengaluru, Karnataka, India</div>
               </div>
