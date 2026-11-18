@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRight, BarChart3, BriefcaseBusiness, Code2, Database, GraduationCap, Layers3, MessageCircle, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowRight, BriefcaseBusiness, Code2, Database, GraduationCap, Layers3, MessageCircle, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import profile from "../assets/profile-2027.jpg";
 import universityErp from "../assets/getmaterial.png";
@@ -78,9 +78,9 @@ function HomePage() {
               <Link className="button button-secondary" to="/projects">Explore my work</Link>
             </div>
             <div className="hero-proof">
-              <span><Code2 size={16} /> Practical projects</span>
-              <span><MessageCircle size={16} /> Personal guidance</span>
-              <span><BarChart3 size={16} /> Industry context</span>
+              <span><Code2 size={16} /> 3 projects completed</span>
+              <span><GraduationCap size={16} /> 10+ students trained</span>
+              <span><MessageCircle size={16} /> Free demo available</span>
             </div>
           </div>
           <div className="hero-visual">
@@ -170,6 +170,7 @@ function HomePage() {
             <div className="trust-stat"><span>01</span><div><b>Understand the goal</b><small>Clarify the problem before choosing a tool.</small></div></div>
             <div className="trust-stat"><span>02</span><div><b>Build practical skills</b><small>Apply concepts through guided exercises and projects.</small></div></div>
             <div className="trust-stat"><span>03</span><div><b>Show your work</b><small>Present your projects, thinking, and progress clearly.</small></div></div>
+            <div className="trust-stat"><span>04</span><div><b>Interview assistance</b><small>Some students I’ve trained have joined MNCs with packages up to ₹8 LPA after interview support. Outcomes vary; placement is not guaranteed.</small></div></div>
           </div>
         </div>
       </section>

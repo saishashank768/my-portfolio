@@ -2,6 +2,7 @@ import profile2027 from '../assets/profile-2027.jpg';
 import { Github, Linkedin, Mail, ExternalLink, Phone, MessageCircle } from 'lucide-react';
 import { Card, CardHeader } from "@/components/ui/card";
 import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   const skills = [
@@ -58,7 +59,7 @@ const AboutPage = () => {
               transition={{ duration: 0.5 }}
               className="text-lg text-gray-700 font-medium"
             >
-              I am a professional freelancer specializing in custom software solutions, modern website development, and creative video & reel editing. I help businesses and individuals elevate their digital presence with tailored, high-quality work—delivered with a focus on style, innovation, and results.
+              I’m an IT trainer, full-stack developer, data science mentor, and independent freelancer. I build custom software and help students and professionals develop practical skills through Python, data science, and web development projects.
             </motion.p>
           </div>
         </div>
@@ -82,7 +83,7 @@ const AboutPage = () => {
                 transition={{ duration: 0.5 }}
                 className="text-gray-600 leading-relaxed"
               >
-                Data Science graduate turned Full-Stack Developer—experienced in web scraping, ML models, and building ERP systems. Worked on real-time analytics, Azure deployments, and client-focused full-stack solutions, earning a Problem Solver award.
+                Data Science graduate turned Full-Stack Developer, with experience in web scraping, machine learning, ERP systems, real-time analytics, and Azure deployments. I’ve completed 3 projects and trained 10+ students. With interview assistance, some students I’ve trained have secured roles at MNCs with packages up to ₹8 LPA. These are individual outcomes, not a placement guarantee.
               </motion.p>
             </div>
 
@@ -202,13 +203,16 @@ const AboutPage = () => {
         {/* Call to Action */}
         <div className="border-t pt-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-xl font-medium">Interested in working together?</p>
-            <a href="/projects">
-              <button className="flex items-center gap-2 px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
+            <p className="text-xl font-medium">Interested in training, interview support, or software development?</p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link to="/contact" className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition-colors">
+                Book a Free Demo
+              </Link>
+              <Link to="/projects" className="flex items-center justify-center gap-2 px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
                 View My Work
                 <ExternalLink className="w-4 h-4" />
-              </button>
-            </a>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

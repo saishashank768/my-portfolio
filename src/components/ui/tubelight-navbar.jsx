@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react"
+import { useState } from "react"
 import { motion } from "framer-motion"
-import Link from "next/link"
+import { Link } from "react-router-dom"
+import PropTypes from "prop-types"
 import { cn } from "@/lib/utils"
 
 export function NavBar({
@@ -8,17 +9,6 @@ export function NavBar({
   className
 }) {
   const [activeTab, setActiveTab] = useState(items[0].name)
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768)
-    }
-
-    handleResize()
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize);
-  }, [])
 
   return (
     (<div
@@ -35,7 +25,7 @@ export function NavBar({
           return (
             (<Link
               key={item.name}
-              href={item.url}
+              to={item.url}
               onClick={() => setActiveTab(item.name)}
               className={cn(
                 "relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors",
@@ -73,3 +63,12 @@ export function NavBar({
     </div>)
   );
 }
+
+NavBar.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+    icon: PropTypes.elementType.isRequired,
+  }).isRequired).isRequired,
+  className: PropTypes.string,
+};
